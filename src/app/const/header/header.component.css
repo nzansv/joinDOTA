@@ -1,0 +1,11 @@
+
+.navbar-dark .nav-item:hover .nav-link {
+  color: #841c25;
+}
+.navbar-dark .nav-item .nav-link{
+color: white;
+  padding-left: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: Montserrat;
+}

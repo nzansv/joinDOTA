@@ -1,0 +1,19 @@
+<br>
+<div class="hrdivider">
+  <hr class="style1">
+  <span>NEWS</span>
+
+  <div class="card-group">
+
+    <div class="card bg-transparent text-white" *ngFor="let news_block of news" >
+      <img class="card-img-top small" src="{{ news_block.img }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ news_block.title}}</h5>
+        <p class="card-text"> {{ news_block.text | slice:0:120 }}...</p>
+        <p class="card-text"><small class="text-muted">{{news_block.date | date | lowercase}}</small></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
