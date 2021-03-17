@@ -12,6 +12,7 @@ import {LastNewsComponent} from './home/last-news/last-news.component';
 import {LastEventsComponent} from './home/last-events/last-events.component';
 import {LastRankingComponent} from './home/last-ranking/last-ranking.component';
 import {EventsComponent} from './events/events.component';
+import {NewsPostComponent} from './news-details/news-post/news-post.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {EventsComponent} from './events/events.component';
     LastNewsComponent,
     LastEventsComponent,
     LastRankingComponent,
-    EventsComponent],
+    EventsComponent,
+    NewsPostComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule
