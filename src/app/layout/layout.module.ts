@@ -32,5 +32,6 @@ import {NewsPostComponent} from './news-details/news-post/news-post.component';
     CommonModule,
     LayoutRoutingModule
   ]
+  // dasdasdasd
 })
 export class LayoutModule { }
