@@ -13,6 +13,8 @@ import {LastEventsComponent} from './home/last-events/last-events.component';
 import {LastRankingComponent} from './home/last-ranking/last-ranking.component';
 import {EventsComponent} from './events/events.component';
 import {NewsPostComponent} from './news-details/news-post/news-post.component';
+import {AuthModule} from '../auth/auth/auth.module';
+import {LoginComponent} from '../auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,11 @@ import {NewsPostComponent} from './news-details/news-post/news-post.component';
     LastEventsComponent,
     LastRankingComponent,
     EventsComponent,
+    LoginComponent,
     NewsPostComponent],
   imports: [
     CommonModule,
+    AuthModule,
     LayoutRoutingModule
   ]
   // dasdasdasd
