@@ -9,6 +9,7 @@ import {NewsDetailsComponent} from './news-details/news-details.component';
 import {AuthGuard} from '../auth/auth.guard';
 import {LoginComponent} from '../auth/login/login.component';
 import {ExitLoginGuard} from '../auth/login/exit-login.guard';
+import {EventsDetailsComponent} from './events-details/events-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, canDeactivate: [ExitLoginGuard]},
   { path: 'events', component: EventsComponent},
   { path: 'news-details/:id', component: NewsDetailsComponent},
+  { path: 'events-details/:id', component: EventsDetailsComponent},
   { path: 'ranking', component: RankingComponent, canActivate: [AuthGuard]}
 ];
 

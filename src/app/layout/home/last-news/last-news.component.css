@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 20px;
   width: 100%;
-  text-align: center;
+  text-after-overflow: 100;
 }
 hr.style1{
   border-top: 3px solid #EC1C24;
@@ -12,7 +12,7 @@ hr.style1{
   top: -11px;
   color: white;
   background: #292929;
-  padding: 0 20px;
+  padding: 0 20px ;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }

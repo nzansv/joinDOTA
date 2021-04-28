@@ -1,0 +1,18 @@
+.hrdivider {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+hr.style1{
+  border-top: 3px solid #EC1C24;
+}
+.hrdivider span {
+  position: absolute;
+  top: -11px;
+  color: white;
+  background: #292929;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+}

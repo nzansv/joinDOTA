@@ -1,16 +1,32 @@
 <div class="container">
 
-  <div class="text-white" style="margin-top: 50px">
+  <div class="row">
+  <div class="col-md-8 text-white" style="margin-top: 50px">
     <app-news-post [newsPost]="news" [id]="id"></app-news-post>
   </div>
 
-  <aside class="col-md-4 blog-sidebar text-white">
+  <div class="col text-white" style="margin-top: 85px; " >
+
 
       <div class="p-3">
-        <h4 class="font-italic">Other News</h4>
+        <p class="font-italic">Other News</p>
 
+        <div class="col">
+
+        <div class="row" *ngFor="let news_block of news" routerLink="/news-details/{{news_block.id}}">
+          <div class="card text-white mt-2" style="background: black; margin-right: 10px; border: transparent">
+            <div class="card-body">
+              <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title" >{{ news_block.title}}</h5>
+              <p class="card-text text-danger" style="font-size: 10px">{{news_block.date | date | lowercase}}<small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+
+        </div>
 
       </div>
-    </aside>
+    </div>
+
+  </div>
 
 </div>

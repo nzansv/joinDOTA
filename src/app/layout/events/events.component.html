@@ -1,2 +1,35 @@
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-auto">
+
+<br>
+<div class="hrdivider">
+  <hr class="style1">
+  <span class="justify-content-center">EVENTS</span>
+</div>
+      <div class="container">
+        <div class="row row-cols-3">
+          <div class="col" *ngFor="let events_block of events" style="margin-top: 30px">
+            <div class="card text-white" style="background: black; margin-right: 10px; border: transparent" >
+            <img class="card-img-top small"  routerLink="/events-details/{{events_block.id}}" src="{{ events_block.img }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ events_block.title}}</h5>
+              <p class="card-text text-danger" style="font-size: 10px">{{events_block.date | date | lowercase}}<small class="text-muted"></small></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+<div class="card-group" >
+
+
+
+</div>
+
+
 <p>events works!</p>
+    </div>
+  </div>
+</div>

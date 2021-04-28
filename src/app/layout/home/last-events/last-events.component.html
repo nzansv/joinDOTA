@@ -1,5 +1,33 @@
 <br>
 <div class="hrdivider">
   <hr class="style1">
-  <span>EVENTS</span>
+  <span class="justify-content-center">EVENTS</span>
+</div>
+
+<div class="card-group" >
+
+  <div class="card text-white" style="background: black; margin-right: 10px; border: transparent" >
+    <img class="card-img-top small" routerLink="/events-details/{{events[1].id}}" src="{{ events[1].img }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ events[1].title}}</h5>
+      <p class="card-text text-danger" style="font-size: 10px">{{events[1].date | date | lowercase}}<small class="text-muted"></small></p>
+    </div>
+  </div>
+
+  <div class="card text-white" style="background: black; margin-right: 10px; border: transparent" >
+    <img class="card-img-top small" routerLink="/events-details/{{events[2].id}}" src="{{ events[2].img }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ events[2].title}}</h5>
+      <p class="card-text text-danger" style="font-size: 10px">{{events[2].date | date | lowercase}}<small class="text-muted"></small></p>
+    </div>
+  </div>
+
+  <div class="card text-white" style="background: black; margin-right: 10px; border: transparent" >
+    <img class="card-img-top small" routerLink="/events-details/{{events[3].id}}" src="{{ events[3].img }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ events[3].title}}</h5>
+      <p class="card-text text-danger" style="font-size: 10px">{{events[3].date | date | lowercase}}<small class="text-muted"></small></p>
+    </div>
+  </div>
+
 </div>
