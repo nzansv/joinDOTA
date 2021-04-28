@@ -1,0 +1,18 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div>
+    <input type="text" id="email" placeholder="email" style="background: #323232"
+           name="email" formControlName="email"/>
+
+    <div [style.color]="'red'" *ngIf="!contactForm?.controls?.email?.valid
+                && (contactForm?.controls?.email?.dirty
+                    || contactForm?.controls?.email?.touched)">
+      Invalid Email
+      <div *ngIf="contactForm?.controls?.email?.errors?.required">
+        Email is required
+      </div>
+      <div *ngIf="contactForm?.controls?.email?.errors?.minlength">
+        Email min length error {{contactForm?.controls?.email?.errors?.minlength?.requiredLength}}
+      </div>
+    </div>
+  </div>
+</form>
