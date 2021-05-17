@@ -6,7 +6,7 @@
 
   <div class="card-group ">
 
-    <div class="card bg-transparent text-white" *ngFor="let news_block of news" >
+    <div class="card bg-transparent text-white" *ngFor="let news_block of News" >
       <img class="card-img-top small" routerLink="/news-details/{{news_block.id}}" src="{{ news_block.img }}" alt="Card image cap">
       <div class="card-body">
         <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ news_block.title}}</h5>
