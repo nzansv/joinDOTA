@@ -23,7 +23,7 @@ export class ModelDrivenFormComponent implements OnInit {
   }
 
   get email(): any {
-    return this.contactForm.get('email');
+    return this.contactForm.get('_replyto');
   }
 
   onSubmit(): void {

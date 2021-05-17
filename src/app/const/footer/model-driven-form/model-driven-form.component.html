@@ -1,8 +1,14 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <div>
-    <input type="text" id="email" placeholder="email" style="background: #323232"
-           name="email" formControlName="email"/>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" action="https://formspree.io/f/xvodkwpv"
+      method="POST">
 
+
+    <input type="hidden" name="message" value="Welcome, to joindota!"/>
+
+    <label>
+      <input type="text" id="email" placeholder="email" style="background: #323232"
+             name="_replyto" formControlName="email"/>
+    </label>
+    <button type="submit">Send</button>
     <div [style.color]="'red'" *ngIf="!contactForm?.controls?.email?.valid
                 && (contactForm?.controls?.email?.dirty
                     || contactForm?.controls?.email?.touched)">
@@ -14,5 +20,4 @@
         Email min length error {{contactForm?.controls?.email?.errors?.minlength?.requiredLength}}
       </div>
     </div>
-  </div>
 </form>
