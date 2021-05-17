@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SeasonsService} from '../../service/seasons.service';
 
 @Component({
   selector: 'app-play',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayComponent implements OnInit {
 
-  constructor() { }
+  seasons: any = [];
+
+  constructor(private seasonsService: SeasonsService) { }
 
   ngOnInit(): void {
+    this.getSeasons();
+  }
+
+  getSeasons(): any{
+    this.seasonsService.getSeasons().subscribe(result => {
+      this.seasons = result;
+      console.log(this.seasons);
+    });
   }
 
 }

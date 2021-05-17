@@ -17,6 +17,8 @@ import {AuthModule} from '../auth/auth/auth.module';
 import {LoginComponent} from '../auth/login/login.component';
 import { EventsDetailsComponent } from './events-details/events-details.component';
 import { EventsPostComponent } from './events-details/events-post/events-post.component';
+import { EventsResultTableComponent } from './events-details/events-post/events-result-table/events-result-table.component';
+import { PlayPostComponent } from './play-details/play-post/play-post.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { EventsPostComponent } from './events-details/events-post/events-post.co
     LoginComponent,
     NewsPostComponent,
     EventsDetailsComponent,
-    EventsPostComponent],
+    EventsPostComponent,
+    EventsResultTableComponent,
+    PlayPostComponent],
   imports: [
     CommonModule,
     AuthModule,

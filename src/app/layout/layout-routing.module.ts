@@ -10,6 +10,7 @@ import {AuthGuard} from '../auth/auth.guard';
 import {LoginComponent} from '../auth/login/login.component';
 import {ExitLoginGuard} from '../auth/login/exit-login.guard';
 import {EventsDetailsComponent} from './events-details/events-details.component';
+import {PlayDetailsComponent} from './play-details/play-details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'news-details/:id', component: NewsDetailsComponent},
   { path: 'events-details/:id', component: EventsDetailsComponent},
+  { path: 'play-details/:id', component: PlayDetailsComponent},
   { path: 'ranking', component: RankingComponent, canActivate: [AuthGuard]}
 ];
 

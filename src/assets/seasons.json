@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "schedule": "Signup start: 2019-05-06 21:00 GMT+6\nCheckin start: 2019-05-21 22:30 GMT+6\nCheckin end: 2019-05-21 23:00 GMT+6\nFirst matches: 2019-05-21 23:15 GMT+6",
+    "type": "Team (5)",
+    "status" : "Finished",
+    "participants": "95",
+    "img": "https://cdn0.gamesports.net/league_season_headers/1000/1344.jpg?1556620932",
+    "title": "joinDOTA League Europe - Season #16"
+  },
+  {
+    "id": 2,
+    "schedule": "Check-in: 2019-09-08 19:30 GMT+6 to 2019-09-08 20:00 GMT+6\nSign-up end: 2019-09-08 20:00 GMT+6\nFirst matches: 2019-09-08 20:05 GMT+6\nFollowing matches: All matches will be played back to back including the final",
+    "type": "Team (5)",
+    "status" : "Finished",
+    "participants": "64",
+    "img": "https://cdn0.gamesports.net/league_season_headers/1000/1350.jpg?1556628975",
+    "title": "joinDOTA League America Brawls - Season #16"
+  },
+  {
+    "id": 3,
+    "schedule": "Signup start: 2019-06-24 14:00 GMT+6\nCheckin start: 2019-07-01 16:30 GMT+6\nCheckin end: 2019-07-01 17:00 GMT+6\nFirst matches: 2019-07-01 17:15 GMT+6",
+    "type": "Team (5)",
+    "status" : "Finished",
+    "participants": "43",
+    "img": "https://cdn0.gamesports.net/league_season_headers/1000/1373.jpg?1561559042",
+    "title": "joinDOTA League Asia Brawls - Season #16.3"
+  },
+  {
+    "id": 4,
+    "schedule": "Signup start: 2019-06-17 14:00 GMT+6\nCheckin start: 2019-06-24 16:30 GMT+6\nCheckin end: 2019-06-24 17:00 GMT+6\nFirst matches: 2019-06-24 17:15 GMT+6",
+    "type": "Team (5)",
+    "status" : "Finished",
+    "participants": "19",
+    "img": "https://cdn0.gamesports.net/league_season_headers/1000/1344.jpg?1556620932",
+    "title": "joinDOTA League Asia Brawls - Season #16.2"
+  }
+]

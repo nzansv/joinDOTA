@@ -1,1 +1,30 @@
-<p>play component</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-auto">
+
+      <br>
+      <div class="hrdivider">
+        <hr class="style1">
+        <span class="justify-content-center">SEASONS</span>
+      </div>
+      <div class="container">
+        <div class="row row-cols-3">
+          <div class="col" *ngFor="let seasons_block of seasons" style="margin-top: 30px">
+            <div class="card text-white" style="background: black; margin-right: 10px; border: transparent" >
+              <img class="card-img-top small" routerLink="/play-details/{{seasons_block.id}}" src="{{ seasons_block.img }}" alt="Card image cap">
+              <div class="card-body">
+                <h5 [ngStyle]="{ 'font-size': '30 px', 'font-weight' : 'bold' }" class="card-title">{{ seasons_block.title}}</h5>
+                <p class="card-text text-danger" style="font-size: 10px">{{seasons_block.date | date | lowercase}}<small class="text-muted"></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group" >
+
+      </div>
+    </div>
+  </div>
+</div>
